@@ -30,7 +30,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC &mt LCTRL A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt RCTRL SEMI &kp SQT
    &mo 2  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mo 2 
-                   &mo 2 &kp LGUI &mt LSHFT SPACE   &mt RSHFT RET &mo 1 &kp RALT
+                   &mo 3 &kp LGUI &mt LSHFT SPACE   &mt RSHFT RET &mo 1 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -58,6 +58,21 @@
                         bindings = <
    &kp TAB   &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp BSLH       &kp CARET &kp EQUAL &kp UNDER &kp MINUS &kp STAR &kp BSLH
    &kp LCTRL &kp HASH  &kp DLLR  &kp LPAR &kp RPAR &kp GRAVE      &kp MINUS &kp QMARK &kp LBKT  &kp RBKT &kp PLUS &kp GRAVE
+   &kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE      &kp AMPS  &kp GRAVE &kp N2    &kp N3   &kp BSLH &kp TILDE
+                 &trans     &trans       &trans      &trans  &trans   &trans
+                        >;
+                };
+        };
+                util_layer {
+                        label = "UTILS";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  {  |  }  | "\" |   |  ^  |  =  |  _  |  -  |  *  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | PLY | DWN |  UP | RGT |     | F11  |
+// | SHFT |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  `  |  2  |  3  | "\" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB   &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp BSLH       &kp CARET &kp EQUAL &kp UNDER &kp MINUS &kp STAR &kp BSLH
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &kp F11
    &kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE      &kp AMPS  &kp GRAVE &kp N2    &kp N3   &kp BSLH &kp TILDE
                  &trans     &trans       &trans      &trans  &trans   &trans
                         >;
