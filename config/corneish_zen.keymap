@@ -78,5 +78,20 @@
                         >;
                 };
         };
+                util_layer {
+                        label = "UTILS";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  {  |  }  | "\" |   |  ^  |  =  |  _  |  -  |  *  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | PLY | DWN |  UP | RGT |     | F11  |
+// | SHFT |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  `  |  2  |  3  | "\" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB   &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp BSLH       &kp CARET &kp EQUAL &kp UNDER &kp MINUS &kp STAR &kp BSLH
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &kp F11
+   &kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE      &kp AMPS  &kp GRAVE &kp N2    &kp N3   &kp BSLH &kp TILDE
+                 &trans     &trans       &trans      &trans  &trans   &trans
+                        >;
+                };
+        };
 };
 
