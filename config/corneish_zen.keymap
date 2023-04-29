@@ -30,7 +30,7 @@
    &kp TAB &kp Q       &kp W &kp E      &kp R &kp T      &kp Y &kp U       &kp I          &kp O   &kp P          &kp BSPC
    &kp ESC &mt LCTRL A &kp S &mt LGUI D &kp F &kp G      &kp H &mt RALT J  &mt RGUI K     &kp L   &mt RCTRL SEMI &kp SQT
    &mo 2   &kp Z       &kp X &kp C      &kp V &kp B      &kp N &kp M       &kp COMMA      &kp DOT &kp FSLH       &mo 2
-                   &mo 2 &mo 2 &mt LSHFT SPACE   &mt RSHFT RET &mo 1 &mo 3
+                   &tg 4 &mo 2 &mt LSHFT SPACE   &mt RSHFT RET &mo 1 &mo 3
                         >;
                 };
                 lower_layer {
@@ -64,7 +64,7 @@
                 };
 
                 bt_layer {
-                        label = "SYMBOL";
+                        label = "BLTUTH";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  {  |  }  | "\" |   |  ^  |  =  |  _  |  -  |  *  | BKSP |
 // | CTRL |  #  |  $  |  (  |  )  |  `  |   |  -  |  ?  |  <  |  >  |  +  |  `   |
@@ -75,6 +75,21 @@
    &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT &trans   &kp F11
    &kp LSHFT &kp PRCNT    &kp CARET    &kp LBKT     &kp RBKT     &kp TILDE      &kp AMPS   &kp GRAVE &kp N2    &kp N3    &kp BSLH &kp TILDE
                  &trans     &trans       &trans      &trans  &trans   &trans
+                        >;
+                };
+
+                game_layer {
+                        label = "GAMING";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  {  |  }  | "\" |   |  ^  |  =  |  _  |  -  |  *  | BKSP |
+// | CTRL |  #  |  $  |  (  |  )  |  `  |   |  -  |  ?  |  <  |  >  |  +  |  `   |
+// | SHFT |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  `  |  2  |  3  | "\" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB &kp Q    &kp W &kp E  &kp R &kp T      &kp Y &kp U       &kp I          &kp O   &kp P          &kp BSPC
+   &kp ESC &kp A    &kp S &kp D  &kp F &kp G      &kp H &mt RALT J  &mt RGUI K     &kp L   &mt RCTRL SEMI &kp SQT
+   &kp LCTRL   &kp Z       &kp X &kp C      &kp V &kp B      &kp N &kp M       &kp COMMA      &kp DOT &kp FSLH       &mo 2
+                   &tg 0 &kp LSHFT &kp SPACE   &mt RSHFT RET &mo 1 &mo 3
                         >;
                 };
         };
